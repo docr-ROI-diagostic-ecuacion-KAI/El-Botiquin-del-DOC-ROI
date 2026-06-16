@@ -1,0 +1,23 @@
+{
+  "name": "el-botiquin-del-doc-roi",
+  "version": "1.0.0",
+  "description": "Catálogo visual de píldoras, vitaminas y medicinas Doc ROI para aprender, automatizar, decidir mejor y monetizar el dato",
+  "main": "docroi-botiquin-analytics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docr-ROI-diagostic-ecuacion-KAI/El-Botiquin-del-DOC-ROI.git"
+  },
+  "keywords": ["docroi", "analytics", "botiquin", "data", "roi"],
+  "author": "Doc ROI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/docr-ROI-diagostic-ecuacion-KAI/El-Botiquin-del-DOC-ROI/issues"
+  },
+  "homepage": "https://github.com/docr-ROI-diagostic-ecuacion-KAI/El-Botiquin-del-DOC-ROI#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
