@@ -1,0 +1,192 @@
+.docroi-recipes {
+  padding: 0;
+  background: #071019;
+}
+
+.docroi-recipe-card {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+  padding: clamp(28px, 5vw, 54px);
+  border-top: 1px solid rgba(216, 236, 248, .16);
+  border-bottom: 1px solid rgba(216, 236, 248, .16);
+  background:
+    linear-gradient(135deg, rgba(0, 59, 92, .94), rgba(5, 7, 11, .96)),
+    url("https://docroi.marketing/wp-content/uploads/2026/06/7b14b5e4-c3f0-4e1f-afe2-25fedb341e3a.png") center / cover no-repeat;
+  color: #fff;
+}
+
+.docroi-recipe-copy h2 {
+  max-width: 900px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 5.4vw, 4.2rem);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -.04em;
+}
+
+.docroi-recipe-copy p {
+  max-width: 900px;
+  margin: 18px 0 0;
+  color: #D8ECF8;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.docroi-recipe-flow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.docroi-recipe-step {
+  min-height: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+  border: 1px solid rgba(216, 236, 248, .32);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .94);
+  color: #071019;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .22);
+}
+
+.docroi-recipe-step span {
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #EAF6FB;
+  color: #003B5C;
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.docroi-recipe-step strong {
+  font-size: 1.05rem;
+  font-weight: 900;
+  line-height: 1.08;
+}
+
+.docroi-recipe-step small {
+  margin-top: 6px;
+  color: #566273;
+  font-size: .82rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.docroi-recipe-operator {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  border: 2px solid rgba(216, 236, 248, .45);
+  border-radius: 999px;
+  background: #0F6F8E;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, .22);
+}
+
+.docroi-recipe-result {
+  padding: 22px;
+  border: 1px solid rgba(216, 236, 248, .28);
+  border-radius: 24px;
+  background: rgba(5, 7, 11, .72);
+  color: #fff;
+}
+
+.docroi-recipe-result strong {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.docroi-recipe-result span {
+  display: block;
+  margin-top: 8px;
+  color: #D8ECF8;
+  font-size: .95rem;
+  line-height: 1.45;
+}
+
+.docroi-card-toggle {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D8ECF8;
+  border-radius: 999px;
+  background: #EAF6FB;
+  color: #003B5C;
+  font-size: 1.15rem;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.docroi-resource-card .docroi-card-top {
+  align-items: center;
+  flex-direction: row;
+}
+
+.docroi-resource-card .docroi-card-toggle {
+  margin-left: auto;
+}
+
+.docroi-resource-card:not(.is-expanded) {
+  min-height: 148px;
+  cursor: pointer;
+}
+
+.docroi-resource-card:not(.is-expanded) p,
+.docroi-resource-card:not(.is-expanded) .docroi-resource-footer {
+  display: none;
+}
+
+.docroi-resource-card:not(.is-expanded)::after {
+  display: none;
+}
+
+.docroi-resource-card:not(.is-expanded) .docroi-card-top {
+  margin-bottom: 18px;
+}
+
+.docroi-resource-card.is-expanded {
+  cursor: default;
+}
+
+.docroi-resource-card.is-expanded .docroi-card-toggle {
+  background: #003B5C;
+  color: #fff;
+}
+
+.docroi-resource-card.is-expanded .docroi-card-toggle::before {
+  content: "-";
+}
+
+.docroi-resource-card:not(.is-expanded) .docroi-card-toggle::before {
+  content: "+";
+}
+
+@media (min-width: 920px) {
+  .docroi-recipe-card {
+    grid-template-columns: minmax(0, 1fr) minmax(520px, 1.25fr);
+  }
+
+  .docroi-recipe-flow {
+    grid-template-columns: 1fr 44px 1fr 44px 1fr 54px minmax(220px, .9fr);
+  }
+}
