@@ -146,6 +146,22 @@
   align-items: start;
 }
 
+.docroi-resource-grid.is-masonry {
+  display: block;
+  position: relative;
+}
+
+.docroi-resource-grid.is-masonry .docroi-resource-card {
+  position: absolute;
+  margin: 0;
+  transition:
+    top .22s ease,
+    left .22s ease,
+    transform .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease;
+}
+
 .docroi-resource-card .docroi-card-toggle {
   margin-left: auto;
 }
