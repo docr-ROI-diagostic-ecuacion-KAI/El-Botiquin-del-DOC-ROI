@@ -142,6 +142,10 @@
   flex-direction: row;
 }
 
+.docroi-resource-grid {
+  align-items: start;
+}
+
 .docroi-resource-card .docroi-card-toggle {
   margin-left: auto;
 }
