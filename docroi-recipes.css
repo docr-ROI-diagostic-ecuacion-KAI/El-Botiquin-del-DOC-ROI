@@ -153,7 +153,7 @@
 
 .docroi-resource-card:not(.is-expanded) p,
 .docroi-resource-card:not(.is-expanded) .docroi-resource-footer {
-  display: none;
+  display: none !important;
 }
 
 .docroi-resource-card:not(.is-expanded)::after {
